@@ -1,1 +1,0 @@
-const config = {apiKey: 'cGXOvg33mGlzcJ6Ax7pXZgeF'}
