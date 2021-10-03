@@ -1,3 +1,6 @@
 # node-modules file
   
 node_modules
+
+#secrets
+.config.js
