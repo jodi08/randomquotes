@@ -6,14 +6,6 @@ const author = document.getElementById('author')
 const url = 'https://quotes.rest/qod?api_key=cGXOvg33mGlzcJ6Ax7pXZgeF'
 
 
-
-
-
-// async function getQuote() {
-//     let response = await fetch(url, headerDetails)
-//     let data = await response.json()
-//     console.log(data.quotes)
-// }
 async function get_quote_of_the_day() {
   const getAQuote = document.getElementById('quote')
     const headerDetails = 
@@ -27,7 +19,7 @@ async function get_quote_of_the_day() {
   console.log(data.contents.quotes[0])
 
   quote.innerHTML = data.contents.quotes[0].quote
-  author.innerHTML = data.contents.quotes[0].author
+  author.innerHTML = `~  ${data.contents.quotes[0].author}`
   
 }
 

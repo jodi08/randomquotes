@@ -14,34 +14,28 @@ body {
   flex-direction: column;
   color: #333;
   font-size: 45px;
+  background-color: lightcyan;
 }
 h1 {
-  height: 60px;
+  height: 10vh;
   font-family: "Zen Loop", sans-serif;
   margin-bottom: 50px;
 }
 .container {
-  height: 350px;
-  width: 37rem;
-  background-color: lightcyan;
+  height: 65vh;
+  width: 65vw;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  border: 1px solid tan;
+  border: 1px solid navy;
   border-radius: 15px;
   font-weight: 600;
   margin: 20px auto;
 }
-.btn {
-  margin-top: 50px;
-  height: 45px;
-  width: 200px;
-  border-radius: 8px;
-  font-size: 24px;
-  border: 1px solid saddlebrown;
-  background-color: #fff;
-  font-family: inherit;
-  font-weight: bold;
+p#author {
+  margin-top: 15px;
+  margin-left: 175px;
 }
