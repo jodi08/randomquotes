@@ -1,21 +1,34 @@
-const btn = document.querySelector('.btn');
-const getAQuote = document.getElementById('joke')
 
-const url = 'http://quotes.rest/quote/random.json'
+const quote = document.getElementById('quote')
+const author = document.getElementById('author')
 
-btn.addEventListener('click', getQuote)
 
-const headerDetails = 
+const url = 'https://quotes.rest/qod?api_key=cGXOvg33mGlzcJ6Ax7pXZgeF'
+
+
+
+
+
+// async function getQuote() {
+//     let response = await fetch(url, headerDetails)
+//     let data = await response.json()
+//     console.log(data.quotes)
+// }
+async function get_quote_of_the_day() {
+  const getAQuote = document.getElementById('quote')
+    const headerDetails = 
   {headers: {
           "Accept": "application/json"
         }
   }
+  let response = await fetch(url, 
+  headerDetails)
+  let data = await response.json()
+  console.log(data.contents.quotes[0])
 
-
-async function getQuote() {
-    let response = await fetch(url, headerDetails)
-    let data = await response.json()
-    console.log(data)
+  quote.innerHTML = data.contents.quotes[0].quote
+  author.innerHTML = data.contents.quotes[0].author
+  
 }
 
-getQuote()
+get_quote_of_the_day()
