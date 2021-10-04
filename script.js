@@ -3,7 +3,7 @@ const quote = document.getElementById('quote')
 const author = document.getElementById('author')
 
 
-const url = 'https://quotes.rest/qod?api_key=cGXOvg33mGlzcJ6Ax7pXZgeF'
+const url = 'https://quotes.rest/qod'
 
 
 async function get_quote_of_the_day() {
