@@ -19,8 +19,8 @@ async function get_quote_of_the_day() {
   console.log(data.contents.quotes[0])
 
   quote.innerHTML = data.contents.quotes[0].quote
-  author.innerHTML = `~  ${data.contents.quotes[0].author}`
-  
+  author.innerHTML = `~  ${data.contents.quotes[0].author}` 
 }
 
 get_quote_of_the_day()
+
